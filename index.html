@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Przykładowa strona v2.4</title>
+    <title>Przykładowa strona v2.5</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -50,6 +50,7 @@
         googletag.cmd.push(function() {
             // Definiowanie size mapping dla responsywnych reklam
             var leaderboardMapping = googletag.sizeMapping()
+                .addSize([1400, 0], [[1141, 150], [728, 90]]) // Desktop 1199 1256-20
                 .addSize([1220, 0], [[1140, 150], [728, 90]]) // Desktop 1199 1256-20
                 .addSize([768, 0], [720, 150]) // Tablet 991
                 .addSize([480, 0], [[480, 150], [300, 50]]) // Mobile 767
